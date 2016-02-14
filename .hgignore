@@ -13,6 +13,7 @@
 \.sld$
 \.smsg$
 \.sof$
+\.sopcinfo$
 \.summary$
 \.swp$
 _dump.txt$
@@ -21,4 +22,5 @@ fpga/db/
 fpga/incremental_db/
 fpga/simulation/
 fpga/stamp/
+fpga/qsys/soc_system/
 /*\.htm$
