@@ -19,8 +19,10 @@
 _dump.txt$
 \.qsys_edit/
 fpga/db/
+fpga/hps_isw_handoff/
 fpga/incremental_db/
 fpga/simulation/
 fpga/stamp/
 fpga/qsys/soc_system/
+fpga/hps_sdram_p0_summary.csv$
 /*\.htm$

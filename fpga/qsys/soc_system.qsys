@@ -6,7 +6,7 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element bss_ctl_0
@@ -37,7 +37,7 @@
    {
       datum baseAddress
       {
-         value = "32";
+         value = "16";
          type = "String";
       }
    }
@@ -53,7 +53,7 @@
    {
       datum baseAddress
       {
-         value = "64";
+         value = "32";
          type = "String";
       }
    }
@@ -69,7 +69,7 @@
    {
       datum baseAddress
       {
-         value = "80";
+         value = "48";
          type = "String";
       }
    }
@@ -85,7 +85,7 @@
    {
       datum baseAddress
       {
-         value = "96";
+         value = "64";
          type = "String";
       }
    }
@@ -101,7 +101,7 @@
    {
       datum baseAddress
       {
-         value = "112";
+         value = "80";
          type = "String";
       }
    }
@@ -117,7 +117,7 @@
    {
       datum baseAddress
       {
-         value = "128";
+         value = "96";
          type = "String";
       }
    }
@@ -133,7 +133,7 @@
    {
       datum baseAddress
       {
-         value = "144";
+         value = "112";
          type = "String";
       }
    }
@@ -149,7 +149,7 @@
    {
       datum baseAddress
       {
-         value = "160";
+         value = "128";
          type = "String";
       }
    }
@@ -165,7 +165,7 @@
    {
       datum baseAddress
       {
-         value = "176";
+         value = "144";
          type = "String";
       }
    }
@@ -181,7 +181,7 @@
    {
       datum baseAddress
       {
-         value = "192";
+         value = "160";
          type = "String";
       }
    }
@@ -197,7 +197,7 @@
    {
       datum baseAddress
       {
-         value = "208";
+         value = "176";
          type = "String";
       }
    }
@@ -213,7 +213,7 @@
    {
       datum baseAddress
       {
-         value = "224";
+         value = "192";
          type = "String";
       }
    }
@@ -229,23 +229,7 @@
    {
       datum baseAddress
       {
-         value = "240";
-         type = "String";
-      }
-   }
-   element bss_data_out_8
-   {
-      datum _sortIndex
-      {
-         value = "17";
-         type = "int";
-      }
-   }
-   element bss_data_out_8.s1
-   {
-      datum baseAddress
-      {
-         value = "256";
+         value = "208";
          type = "String";
       }
    }
@@ -380,11 +364,6 @@
    internal="bss_data_out_7.external_connection"
    type="conduit"
    dir="end" />
- <interface
-   name="bss_data_out_8_external_connection"
-   internal="bss_data_out_8.external_connection"
-   type="conduit"
-   dir="end" />
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface
    name="hps_0_f2h_cold_reset_req"
@@ -410,7 +389,7 @@
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <module name="bss_ctl_0" kind="altera_avalon_pio" version="15.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
   <parameter name="clockRate" value="50000000" />
   <parameter name="direction" value="Output" />
@@ -424,7 +403,7 @@
  </module>
  <module name="bss_ctl_1" kind="altera_avalon_pio" version="15.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
   <parameter name="clockRate" value="50000000" />
   <parameter name="direction" value="Input" />
@@ -636,24 +615,6 @@
  </module>
  <module
    name="bss_data_out_7"
-   kind="altera_avalon_pio"
-   version="15.1"
-   enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="32" />
- </module>
- <module
-   name="bss_data_out_8"
    kind="altera_avalon_pio"
    version="15.1"
    enabled="1">
@@ -1236,7 +1197,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_in_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0040" />
+  <parameter name="baseAddress" value="0x0020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1245,7 +1206,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_in_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0050" />
+  <parameter name="baseAddress" value="0x0030" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1254,7 +1215,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_in_2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0060" />
+  <parameter name="baseAddress" value="0x0040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1263,7 +1224,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_in_3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0070" />
+  <parameter name="baseAddress" value="0x0050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1272,7 +1233,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0080" />
+  <parameter name="baseAddress" value="0x0060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1281,7 +1242,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0090" />
+  <parameter name="baseAddress" value="0x0070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1290,7 +1251,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00a0" />
+  <parameter name="baseAddress" value="0x0080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1299,7 +1260,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00b0" />
+  <parameter name="baseAddress" value="0x0090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1308,7 +1269,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_4.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00c0" />
+  <parameter name="baseAddress" value="0x00a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1317,7 +1278,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_5.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00d0" />
+  <parameter name="baseAddress" value="0x00b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1326,7 +1287,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_6.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00e0" />
+  <parameter name="baseAddress" value="0x00c0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1335,16 +1296,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_data_out_7.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00f0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="15.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="bss_data_out_8.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0100" />
+  <parameter name="baseAddress" value="0x00d0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1353,7 +1305,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="bss_ctl_1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0020" />
+  <parameter name="baseAddress" value="0x0010" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="15.1" start="clk_0.clk" end="sysid_qsys_0.clk" />
@@ -1402,11 +1354,6 @@
    version="15.1"
    start="clk_0.clk"
    end="bss_data_out_7.clk" />
- <connection
-   kind="clock"
-   version="15.1"
-   start="clk_0.clk"
-   end="bss_data_out_8.clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="bss_ctl_1.clk" />
  <connection
    kind="clock"
@@ -1493,11 +1440,6 @@
    version="15.1"
    start="clk_0.clk_reset"
    end="bss_data_out_7.reset" />
- <connection
-   kind="reset"
-   version="15.1"
-   start="clk_0.clk_reset"
-   end="bss_data_out_8.reset" />
  <connection
    kind="reset"
    version="15.1"
