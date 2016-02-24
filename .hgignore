@@ -20,6 +20,7 @@ _dump.txt$
 \.qsys_edit/
 qar_info\.json$
 fpga/db/
+fpga/greybox_tmp/
 fpga/hps_isw_handoff/
 fpga/incremental_db/
 fpga/simulation/
