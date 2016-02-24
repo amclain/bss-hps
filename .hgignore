@@ -18,6 +18,7 @@
 \.swp$
 _dump.txt$
 \.qsys_edit/
+qar_info\.json$
 fpga/db/
 fpga/hps_isw_handoff/
 fpga/incremental_db/

@@ -1,16 +1,41 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+# Date created = 23:10:53  February 23, 2016
+#
+# -------------------------------------------------------------------------- #
+
 #============================================================
-# Build by Terasic System Builder
+# Build by Terasic V1.0.0
 #============================================================
+
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA4U23C6
-set_global_assignment -name TOP_LEVEL_ENTITY "bss_hps"
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1
+set_global_assignment -name TOP_LEVEL_ENTITY bss_hps
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
 set_global_assignment -name LAST_QUARTUS_VERSION 15.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:37:58 FEBRUARY 13,2016"
-set_global_assignment -name DEVICE_FILTER_PACKAGE UFBGA
-set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:10:51  FEBRUARY 23, 2016"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+
 
 #============================================================
 # ADC
@@ -399,7 +424,7 @@ set_global_assignment -name ECO_REGENERATE_REPORT ON
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -603,8 +628,9 @@ set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_s
 set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_wraddress[3] -tag __hps_sdram_p0
 set_instance_assignment -name ENABLE_BENEFICIAL_SKEW_OPTIMIZATION_FOR_NON_GLOBAL_CLOCKS ON -to u0|hps_0|hps_io|border|hps_sdram_inst -tag __hps_sdram_p0
 set_instance_assignment -name PLL_COMPENSATION_MODE DIRECT -to u0|hps_0|hps_io|border|hps_sdram_inst|pll0|fbout -tag __hps_sdram_p0
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name VERILOG_FILE ip/intr_capturer/intr_capturer.v
+set_global_assignment -name VERILOG_FILE ip/edge_detect/altera_edge_detector.v
+set_global_assignment -name VERILOG_FILE ip/debounce/debounce.v
+set_global_assignment -name QIP_FILE ip/altsource_probe/hps_reset.qip
+set_global_assignment -name QIP_FILE qsys/soc_system/synthesis/soc_system.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name QSYS_FILE qsys/soc_system.qsys
-set_global_assignment -name VERILOG_FILE src/soundweb_encoder.v
-set_global_assignment -name VERILOG_FILE bss_hps.v
