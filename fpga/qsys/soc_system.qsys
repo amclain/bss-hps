@@ -9,11 +9,203 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element bss_data_in_0
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element bss_data_in_0.s1
+   {
+      datum baseAddress
+      {
+         value = "48";
+         type = "String";
+      }
+   }
+   element bss_data_in_1
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element bss_data_in_1.s1
+   {
+      datum baseAddress
+      {
+         value = "64";
+         type = "String";
+      }
+   }
+   element bss_data_in_2
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element bss_data_in_2.s1
+   {
+      datum baseAddress
+      {
+         value = "80";
+         type = "String";
+      }
+   }
+   element bss_data_in_3
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element bss_data_in_3.s1
+   {
+      datum baseAddress
+      {
+         value = "96";
+         type = "String";
+      }
+   }
+   element bss_data_out_0
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element bss_data_out_0.s1
+   {
+      datum baseAddress
+      {
+         value = "112";
+         type = "String";
+      }
+   }
+   element bss_data_out_1
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element bss_data_out_1.s1
+   {
+      datum baseAddress
+      {
+         value = "128";
+         type = "String";
+      }
+   }
+   element bss_data_out_2
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element bss_data_out_2.s1
+   {
+      datum baseAddress
+      {
+         value = "144";
+         type = "String";
+      }
+   }
+   element bss_data_out_3
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+   }
+   element bss_data_out_3.s1
+   {
+      datum baseAddress
+      {
+         value = "160";
+         type = "String";
+      }
+   }
+   element bss_data_out_4
+   {
+      datum _sortIndex
+      {
+         value = "19";
+         type = "int";
+      }
+   }
+   element bss_data_out_4.s1
+   {
+      datum baseAddress
+      {
+         value = "176";
+         type = "String";
+      }
+   }
+   element bss_data_out_5
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+   }
+   element bss_data_out_5.s1
+   {
+      datum baseAddress
+      {
+         value = "192";
+         type = "String";
+      }
+   }
+   element bss_data_out_6
+   {
+      datum _sortIndex
+      {
+         value = "21";
+         type = "int";
+      }
+   }
+   element bss_data_out_6.s1
+   {
+      datum baseAddress
+      {
+         value = "208";
+         type = "String";
+      }
+   }
+   element bss_data_out_7
+   {
+      datum _sortIndex
+      {
+         value = "22";
+         type = "int";
+      }
+   }
+   element bss_data_out_7.s1
+   {
+      datum baseAddress
+      {
+         value = "224";
+         type = "String";
+      }
+   }
    element button_pio
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "6";
          type = "int";
       }
    }
@@ -34,7 +226,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "0";
          type = "int";
       }
    }
@@ -42,7 +234,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "7";
          type = "int";
       }
    }
@@ -71,7 +263,7 @@
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "3";
          type = "int";
       }
    }
@@ -79,7 +271,7 @@
    {
       datum _sortIndex
       {
-         value = "0";
+         value = "1";
          type = "int";
       }
    }
@@ -95,7 +287,7 @@
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "2";
          type = "int";
       }
    }
@@ -103,7 +295,7 @@
    {
       datum _sortIndex
       {
-         value = "9";
+         value = "10";
          type = "int";
       }
    }
@@ -129,7 +321,7 @@
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "9";
          type = "int";
       }
    }
@@ -150,7 +342,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "8";
          type = "int";
       }
    }
@@ -171,7 +363,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "4";
          type = "int";
       }
    }
@@ -187,7 +379,7 @@
    {
       datum _sortIndex
       {
-         value = "2";
+         value = "5";
          type = "int";
       }
    }
@@ -225,6 +417,66 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
+ <interface
+   name="bss_data_in_0_external_connection"
+   internal="bss_data_in_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_in_1_external_connection"
+   internal="bss_data_in_1.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_in_2_external_connection"
+   internal="bss_data_in_2.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_in_3_external_connection"
+   internal="bss_data_in_3.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_0_external_connection"
+   internal="bss_data_out_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_1_external_connection"
+   internal="bss_data_out_1.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_2_external_connection"
+   internal="bss_data_out_2.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_3_external_connection"
+   internal="bss_data_out_3.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_4_external_connection"
+   internal="bss_data_out_4.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_5_external_connection"
+   internal="bss_data_out_5.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_6_external_connection"
+   internal="bss_data_out_6.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="bss_data_out_7_external_connection"
+   internal="bss_data_out_7.external_connection"
+   type="conduit"
+   dir="end" />
  <interface
    name="button_pio_external_connection"
    internal="button_pio.external_connection"
@@ -270,6 +522,222 @@
    dir="end" />
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <module
+   name="bss_data_in_0"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_in_1"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_in_2"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_in_3"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_0"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_1"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_2"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_3"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_4"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_5"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_6"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="bss_data_out_7"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
  <module name="button_pio" kind="altera_avalon_pio" version="15.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="true" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -995,6 +1463,114 @@
  <connection
    kind="avalon"
    version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_in_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_in_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_in_2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0050" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_in_3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0060" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0070" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0090" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_4.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00b0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_5.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_6.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00d0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="bss_data_out_7.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00e0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
    start="fpga_only_master.master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
@@ -1079,6 +1655,50 @@
  <connection kind="clock" version="15.1" start="clk_0.clk" end="dipsw_pio.clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="button_pio.clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="jtag_uart.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="bss_data_in_0.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="bss_data_in_1.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="bss_data_in_2.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="bss_data_in_3.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_0.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_1.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_2.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_3.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_5.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_4.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_6.clk" />
+ <connection
+   kind="clock"
+   version="15.1"
+   start="clk_0.clk"
+   end="bss_data_out_7.clk" />
  <connection
    kind="clock"
    version="15.1"
@@ -1181,6 +1801,66 @@
    version="15.1"
    start="clk_0.clk_reset"
    end="jtag_uart.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_in_0.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_in_1.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_in_2.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_in_3.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_0.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_1.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_2.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_3.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_4.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_5.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_6.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="bss_data_out_7.reset" />
  <connection
    kind="reset"
    version="15.1"
